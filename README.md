@@ -43,6 +43,7 @@ To-Do 항목을 다른 사용자와 공유하고 협업할 수 있는 기능 추
 # ERD (Entity-Relationship Diagram)
 
 프로젝트 데이터베이스의 구조를 나타내는 ERD는 다음과 같습니다:
+![TODOLIST](https://github.com/tpwls4005/ToDoListManager/assets/128613811/fcab76a0-51ba-48d8-b175-78980f625f99)
 
 
 (추후 업로드 예정)
