@@ -2,6 +2,7 @@ package com.zerobase.todo.listmanager.Service;
 
 import com.zerobase.todo.listmanager.Entity.Task;
 import com.zerobase.todo.listmanager.Repository.TaskRepository;
+import java.util.Date;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -34,5 +35,24 @@ public class TaskService {
   // 작업 삭제
   public void deleteTask(Long taskId) {
     taskRepository.deleteById(taskId);
+  }
+  public List<Task> getTasksByPriority(Integer priorityId) {
+    return taskRepository.findByPriorityId(priorityId);
+  }
+
+  public List<Task> getAllTasksSortedByDueDate() {
+    return taskRepository.findAllByOrderByDueDate();
+  }
+
+  public List<Task> getAllTasksSortedByCreatedDate() {
+    return taskRepository.findAllByOrderByCreatedDate();
+  }
+
+  public List<Task> getTasksByDueDateBefore(Date dueDate) {
+    return taskRepository.findByDueDateBefore(dueDate);
+  }
+
+  public List<Task> getTasksByDueDateAfter(Date dueDate) {
+    return taskRepository.findByDueDateAfter(dueDate);
   }
 }
