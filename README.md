@@ -46,7 +46,6 @@ To-Do 항목을 다른 사용자와 공유하고 협업할 수 있는 기능 추
 ![TODOLIST](https://github.com/tpwls4005/ToDoListManager/assets/128613811/fcab76a0-51ba-48d8-b175-78980f625f99)
 
 
-(추후 업로드 예정)
 
 # 사용 기술
 
@@ -55,4 +54,3 @@ To-Do 항목을 다른 사용자와 공유하고 협업할 수 있는 기능 추
 - Java
 - Spring Boot
 - 데이터베이스 (H2)
--
